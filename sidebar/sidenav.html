@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                font-family: "Lato", sans-serif;
+            }
+            .sidenav{
+                height:100%;
+                width:0;
+                position:fixed;
+                z-index:1;
+                top:0;
+                left:0;
+                background:linear-gradient(45deg,skyblue,white,skyblue,white,skyblue);
+                overflow-x: hidden;
+                transition:0.5s;
+                padding-top:60px;
+               
+              
+            }
+            .sidenav a{
+                padding:8px 8px 8px 32px;
+                text-decoration: none;
+                font-size:25px;
+                color: #128912;
+                display:block;
+                transition:0.3s;
+            }
+            .sidenav a:hover{
+                color: #000;
+            }
+            .sidenav .closebtn{
+                position:absolute;
+                top:0;
+                right:25px;
+                font-size:36px;
+                margin-left:50px;
+            }
+            .home{
+                font-size:10px;
+            }
+            @media screen and (max-height: 450px){
+                .sidenav{padding-top:15px;}
+                .sidenav a{font-size:18px;}
+            }
+            .active .sidenav{
+                font-size: 20px;
+            }
+            h1{
+                background:linear-gradient(45deg,orange,red,orange,red);
+             
+              
+            }
+     
+
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home"><i class="fa fa-fw fa-home" style="font-size:20px;"></i> Home</a>
+            <a href="#clients"><i class="fa fa-fw fa-user" style="font-size:20px;"></i> About</a>
+           <a href="#works"> <i class="fa fa-tasks" style="font-size:20px;"></i> Works</a>
+          <a href="#blog"><i class="fa fa-paper-plane" style="font-size:20px"></i> Blog</a>
+          <a href="#gallery"><i class="fa fa-folder" style="font-size:20px"></i>  Gallery</a>
+            <a href="#services"><i class="fa fa-fw fa-wrench" style="font-size:20px"></i> Services</a>
+            <a href="#contact"><i class="fa fa-fw fa-envelope" style="font-size:20px"></i> Contact</a>
+        </div>
+        <div class="header">
+       <h1><span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span></h1>
+      
+       </div>
+      
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="soft.jpg">
+                </div>
+                    <div class="col-md-6">
+                    <p>Software is a set of instructions, data or programs used to operate computers and execute specific tasks. It is the opposite of hardware, which describes the physical aspects of a computer. Software is a generic term used to refer to applications, scripts and programs that run on a device. It can be thought of as the variable part of a computer, while hardware is the invariable part.
+
+                        The two main categories of software are application software and system software. An application is software that fulfills a specific need or performs tasks. System software is designed to run a computer's hardware and provides a platform for applications to run on top of.
+                        
+                        Other types of software include programming software, which provides the programming tools software developers need; middleware, which sits between system software and applications; and driver software, which operates computer devices and peripherals.
+                        
+                        Early software was written for specific computers and sold with the hardware it ran on. In the 1980s, software began to be sold on floppy disks, and later on CDs and DVDs. Today, most software is purchased and directly downloaded over the internet. Software can be found on vendor websites or application service provider websites.</p>
+                        <iframe width="777" height="300" src="https://www.youtube.com/embed/XgzwUrGi_nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     
+                </div>
+                
+            </div>
+            <div class="header_1">
+                <p>Examples and types of software
+                    Among the various categories of software, the most common types include the following:
+                    
+                    Application software. The most common type of software, application software is a computer software package that performs a specific function for a user, or in some cases, for another application. An application can be self-contained, or it can be a group of programs that run the application for the user. Examples of modern applications include office suites, graphics software, databases and database management programs, web browsers, word processors, software development tools, image editors and communication platforms.
+                    System software. These software programs are designed to run a computer's application programs and hardware. System software coordinates the activities and functions of the hardware and software. In addition, it controls the operations of the computer hardware and provides an environment or platform for all the other types of software to work in. The OS is the best example of system software; it manages all the other computer programs. Other examples of system software include the firmware, computer language translators and system utilities.
+                    Driver software. Also known as device drivers, this software is often considered a type of system software. Device drivers control the devices and peripherals connected to a computer, enabling them to perform their specific tasks. Every device that is connected to a computer needs at least one device driver to function. Examples include software that comes with any nonstandard hardware, including special game controllers, as well as the software that enables standard hardware, such as USB storage devices, keyboards, headphones and printers.
+                    Middleware. The term middleware describes software that mediates between application and system software or between two different kinds of application software. For example, middleware enables Microsoft Windows to talk to Excel and Word. It is also used to send a remote work request from an application in a computer that has one kind of OS, to an application in a computer with a different OS. It also enables newer applications to work with legacy ones.
+                    Programming software. Computer programmers use programming software to write code. Programming software and programming tools enable developers to develop, write, test and debug other software programs. Examples of programming software include assemblers, compilers, debuggers and interpreters.
+                
+                
+                </p>
+            </div>
+        </div>
+        <script>
+            function openNav(){
+                document.getElementById("mySidenav").style.width="250px";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width="0";
+            }
+        </script>
+    </body>
+</html>
